@@ -1,0 +1,13 @@
+@Data sẽ có tác dụng generate ra Constructor rỗng hoặc có tham số theo yêu cầu (cái này sẽ nói sau), toàn bộ Get/Set, hàm equals, hashCode, toString()
+
+Khi bạn đã đánh dấu 1 class là @Data, thì tại bất cứ đâu trong project. Khi sử dụng tới class này, nó sẽ tự có các function đã generate mà không cần code thêm bất kì dòng nào.
+
+Trong trường hợp bạn muốn định nghĩa các Constructor theo ý mình, thì Lombok hỗ trợ 3 annotation:
+
+@NoArgsConstructor: khởi tạo rỗng, đã đề cập ở trên.
+@RequiredArgsConstructor: Hàm khởi tạo chứa tất cả thuộc tính.
+@AllArgsConstructor: Hàm khởi tạo theo yêu cầu. Bạn chỉ muốn hàm khởi tạo có vài thuộc tính do bạn chọn thôi, thì bạn thêm final trước thuộc tính trong class, nó sẽ tự sinh ra Contructor như thế.
+@Getter/@Setter: @Getter/@SetterKhi bạn chỉ muốn generate mỗi Get/Set thôi và không muốn dùng @Data vì nó quá nhiều chức năng, thì có thể dùng 2 annotation @Getter và @Setter.
+@ToString: Tạo ra hàm toString() từ thuộc tính class.
+@EqualsAndHashCode: Tạo ra hàm equals và hashCode.
+@Builder: @Builder annotation trong project lombok sẽ giúp chúng ta triển khai Builder pattern mà không cần phải viết thêm bất kỳ đoạn code nào. @Builder có thể sử dụng trên class hoặc method.

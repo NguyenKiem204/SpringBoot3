@@ -1,0 +1,1 @@
+@EnableMethodSecurity là một annotation trong Spring Security được sử dụng để kích hoạt tính năng bảo mật ở cấp độ phương thức (method-level security). Annotation này cho phép bạn áp dụng các quy tắc bảo mật trực tiếp lên các phương thức của service hoặc controller bằng cách sử dụng các annotation như @PreAuthorize, @PostAuthorize, @Secured, hoặc @RolesAllowed
